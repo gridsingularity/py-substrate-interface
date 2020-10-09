@@ -41,7 +41,7 @@ elif environ.get('GITHUB_REF'):
 
     version = environ['GITHUB_REF'].replace('refs/tags/v', '')
 else:
-    raise ValueError('Missing commit tag, can\'t set version')
+    version = "0.9.20"
 
 here = path.abspath(path.dirname(__file__))
 
@@ -175,12 +175,12 @@ setup(
         'asyncio==3.4.3',
         'websockets==8.1',
         'base58==2.0.1',
-        'certifi==2019.6.16',
+        'certifi==2019.11.28',
         'chardet==3.0.4',
         'docker==4.2.0',
         'idna==2.8',
         'requests==2.22.0',
-        'urllib3==1.25.3',
+        'urllib3==1.25.8',
         'xxhash==1.3.0',
         'scalecodec>=0.10.18',
         'py-sr25519-bindings>=0.1.2',
