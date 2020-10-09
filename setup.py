@@ -174,7 +174,7 @@ setup(
     install_requires=[
         'asyncio==3.4.3',
         'websockets==8.1',
-        'base58==2.0.0',
+        'base58==2.0.1',
         'certifi==2019.11.28',
         'chardet==3.0.4',
         'docker==4.2.0',
